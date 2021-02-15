@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[table]{xcolor}
+\pagestyle{empty}
+
+\begin{document}
+\large
+\centering
+
+\rowcolors{3}{white}{black!10}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|*{%(numpowers)i}{c}|}
+\hline
+5W Core & \multicolumn{%(numpowers)i}{c|}{Target Power (kW)} \\
+Excess & %(powers)s\\
+\hline
+%(tablebody)s
+\hline
+\end{tabular}\\
+{\tiny\today}
+\end{document}
